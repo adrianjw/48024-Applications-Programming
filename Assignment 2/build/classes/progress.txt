@@ -1,0 +1,22 @@
+[y] The Main menu window is at least partially done.
+[y] The Main menu window is done.
+[y] The Administration menu window is at least partially done.
+[y] The Administration menu window is done.
+[y] The Catalogue menu window is at least partially done.
+[y] The Catalogue menu window is done.
+[y] The Add Customer and Movie windows are at least partially done.
+[y] The Add Customer and Movie windows are done.
+[y] The Remove Customer and Movie windows are at least partially done.
+[y] The Remove Customer and Movie windows are done.
+[y] The Customer Record and Favourite Movies windows are at least partially done.
+[y] The Customer Record and Favourite Movies windows are done.
+[y] The Show All Movies and Show Available Movies windows are at least partially done.
+[y] The Show All Movies and Show Available Movies windows are done.
+[y] The Show By Genre and By Year windows are at least partially done.
+[y] The Show By Genre and By Year windows are done.
+[y] The Rent a Movie window is at least partially done.
+[y] The Rent a Movie window is done.
+[y] The Return a Movie window is at least partially done.
+[y] The Return a Movie window is done.
+[y] The Top-up Account window is at least partially done.
+[y] The Top-up Account window is done.
