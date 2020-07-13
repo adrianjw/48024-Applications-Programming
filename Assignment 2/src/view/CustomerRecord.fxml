@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controller.CustomerRecordController"
+        prefWidth="700" alignment="center" spacing="10" styleClass="root">
+    
+    <HBox alignment="center_left" spacing="10">
+        <ImageView>
+            <image>
+                <Image url="@movie_icon.png"/>
+            </image>
+        </ImageView>
+        <Label text="Customer Record" styleClass="h1"/>
+    </HBox>
+    
+    <HBox alignment="center" spacing="10">
+        <Label text="Customer ID:"/>
+        <TextField fx:id="idTf"/>
+        <Button fx:id="selectCustomerBtn" text="Select Customer" disable="true"
+                styleClass="button" onAction="#handleSelectCustomer"/>
+    </HBox>
+    
+    <Text fx:id="feedbackTxt"/>
+    
+    <Label text="Rented Movies" styleClass="h2"/>
+    
+    <TableView fx:id="rentedMoviesTv" styleClass="table-view">
+        <placeholder>
+            <Label text="No results found."/>
+        </placeholder>
+        <columns>
+            <TableColumn text="Title">
+                <cellValueFactory>
+                    <PropertyValueFactory property="title"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Year">
+                <cellValueFactory>
+                    <PropertyValueFactory property="year"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Genre">
+                <cellValueFactory>
+                    <PropertyValueFactory property="genre"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Price">
+                <cellValueFactory>
+                    <PropertyValueFactory property="price"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    
+    <Label text="Renting History" styleClass="h2"/>
+    
+    <TableView fx:id="rentHistoryTv" styleClass="table-view">
+        <placeholder>
+                <Label text="No results found."/>
+        </placeholder>
+        <columns>
+            <TableColumn text="Title">
+                <cellValueFactory>
+                    <PropertyValueFactory property="title"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Year">
+                <cellValueFactory>
+                    <PropertyValueFactory property="year"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Genre">
+                <cellValueFactory>
+                    <PropertyValueFactory property="genre"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Price">
+                <cellValueFactory>
+                    <PropertyValueFactory property="price"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    
+    <Button text="Close" styleClass="button" onAction="#handleClose"/>
+    
+    <stylesheets>
+        <URL value="@kiosk.css"/>
+    </stylesheets>
+    
+</VBox>

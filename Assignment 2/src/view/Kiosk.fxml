@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controller.KioskController"
+        alignment="center" spacing="10" styleClass="root">
+    
+    <HBox alignment="center_left" spacing="10">
+        <ImageView>
+            <image>
+                <Image url="@movie_icon.png"/>
+            </image>
+        </ImageView>
+        <Label text="Movie Kiosk" styleClass="h1"/>
+    </HBox>
+    
+    <HBox alignment="center_right">
+        <Button text="Administration" styleClass="button" onAction="#handleViewAdminMenu"/>
+    </HBox>
+    
+    <HBox alignment="center" spacing="10">
+        <Button text="${'Explore\nCatalogue'}" styleClass="largeButton" onAction="#handleViewCatalogueMenu"/>
+        <Button text="${'Customer\nRecord'}" styleClass="largeButton" onAction="#handleViewCustomerRecord"/>
+        <Button text="${'Top-Up\nAccount'}" styleClass="largeButton" onAction="#handleViewTopUpAccount"/>
+        <Button text="${'Favourite\nMovies'}" styleClass="largeButton" onAction="#handleViewFavMovies"/>
+    </HBox>
+    
+    <Button text="Quit" styleClass="button" onAction="#handleQuit"/>
+    
+    <stylesheets>
+        <URL value="@kiosk.css"/>
+    </stylesheets>
+
+</VBox>
