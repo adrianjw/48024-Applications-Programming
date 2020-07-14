@@ -4,3 +4,4 @@
 2. Launch cmd.exe or terminal
 3. cd to `.\dist`
 4. Type `java -jar "Assignment_1.jar"`
+5. Read `Assignment 1 - Specification.pdf` on how to use the app
